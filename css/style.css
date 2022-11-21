@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    padding: 0 30px;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    /* position: fixed; */
+}
+
+/* Start of navbar elements */
+.icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.iconText {
+    margin: 0 20px 0 5px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.searchBar {
+    height: 40px;
+    width: 40%;
+    display: flex;
+}
+
+.input {
+    width: 87%;
+    height: 100%;
+    padding: 0 15px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    border-right: 0;
+}
+
+#search {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+    border: none;
+}
+
+#searchBtn {
+    background-color: #f8f8f8;
+    width: 13%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#searchBtn img {
+    margin-right: 5px;
+}
+
+/* End of navbar elements */
+
+.homeContent {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+}
+
+/* Start of homeContent elements */
+
+.homeLeft {
+    height: 100%;
+    width: 15%;
+    background-color: #ccc;
+}
+
+.homeRight {
+    height: 100%;
+    width: 85%;
+    padding: 10px 15px;
+}
+
+/* start homeRight */
+.videoContainer {
+    padding: 0 8px;
+    width: 25%;
+    height: 40vh;
+    float: left;
+}
+
+/* start videoContainer */
+.videoWrapper {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.video {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.videoDetails {
+    height: 40%;
+    margin: 10px 0;
+    display: flex;
+}
+
+.channelImage {
+    width: 20%;
+}
+
+.videoTitle {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.channelName {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+
+.viewsRow {
+    margin: 5px 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewsRow div {
+    margin: 0 5px;
+    background-color: black;
+    border-radius: 50%;
+    width: 3px;
+    height: 3px;
+    font-weight: 900;
+    border: 1px solid black;
+}
+/* end homeRight */
+
+/* end of homeContent elements */

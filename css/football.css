@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.videoPage {
+    height: 100vh;
+    width: 100%;
+}
+
+.videoPageContent {
+    display: flex;
+}
+
+.pageLeft {
+    width: 70%;
+    padding: 10px 35px;
+}
+
+/* Start of pageLeft elements */
+
+.largeVideo{
+    width: 100%;
+}
+
+.videoTitle {
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f0f0f;
+}
+
+.channelAttributes {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.channelDetails {
+    margin: 0 15px;
+    padding: 3px 0;
+}
+
+.channelName {
+    font-size: 16px;
+    color: #0f0f0f;
+    font-weight: 700;
+}
+
+.channelSubs {
+    font-size: 12px;
+    color: #606060;
+}
+
+.subscribeBtn {
+    margin: 0 15px;
+    padding: 7px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.subscribeBtn:hover {
+    opacity: 0.9;
+}
+
+.videoDescription {
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.videoDescription:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.descriptionTitle {
+    display: flex;
+}
+
+.descriptionTitle p {
+    margin: 0 10px 0 0;
+    font-weight: 700;
+    color: #0f0f0f;
+    line-height: 20px;
+}
+
+
+/* End of pageLeft elements */
+
+.pageRight {
+    width: 30%;
+    background-color: #bebebe;
+}
