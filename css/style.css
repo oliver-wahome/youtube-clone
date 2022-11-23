@@ -132,6 +132,17 @@
     width: 20%;
 }
 
+.channelIcon{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    /* border: 1px solid #ccc; */
+}
+
+.videoAttributes {
+    width: 80%;
+}
+
 .videoTitle {
     font-size: 16px;
     margin: 5px 0;
@@ -147,7 +158,6 @@
     margin: 5px 0;
     font-size: 12px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
