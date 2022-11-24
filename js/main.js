@@ -126,3 +126,68 @@ document.getElementById("video5").onclick = function(){
     window.location.href = "video.html?" + video5.id;
 }
 
+
+/*
+    Making videos play when the mouse is over it
+    Making videos stop when the mouse is out
+*/
+//video1
+document.getElementById("video1").onmouseover = function(){
+    document.getElementById("video1").setAttribute("controls", "controls");
+    document.getElementById("video1").play();
+    document.getElementById("vc1").style.scale = 1.25;
+}
+document.getElementById("video1").onmouseout = function(){
+    document.getElementById("video1").removeAttribute("controls");
+    document.getElementById("video1").pause();
+    document.getElementById("vc1").style.scale = 1;
+}
+
+//video2
+document.getElementById("video2").onmouseover = function(){
+    document.getElementById("video2").setAttribute("controls", "controls");
+    document.getElementById("video2").play();
+    document.getElementById("vc2").style.scale = 1.25;
+}
+document.getElementById("video2").onmouseout = function(){
+    document.getElementById("video2").removeAttribute("controls");
+    document.getElementById("video2").pause();
+    document.getElementById("vc2").style.scale = 1;
+}
+
+//video3
+document.getElementById("video3").onmouseover = function(){
+    document.getElementById("video3").setAttribute("controls", "controls");
+    document.getElementById("video3").play();
+    document.getElementById("vc3").style.scale = 1.25;
+}
+document.getElementById("video3").onmouseout = function(){
+    document.getElementById("video3").removeAttribute("controls");
+    document.getElementById("video3").pause();
+    document.getElementById("vc3").style.scale = 1;
+}
+
+//video4
+document.getElementById("video4").onmouseover = function(){
+    document.getElementById("video4").setAttribute("controls", "controls");
+    document.getElementById("video4").play();
+    document.getElementById("vc4").style.scale = 1.25;
+}
+document.getElementById("video4").onmouseout = function(){
+    document.getElementById("video4").removeAttribute("controls");
+    document.getElementById("video4").pause();
+    document.getElementById("vc4").style.scale = 1;
+}
+
+//video5
+document.getElementById("video5").onmouseover = function(){
+    document.getElementById("video5").setAttribute("controls", "controls");
+    document.getElementById("video5").play();
+    document.getElementById("vc5").style.scale = 1.25;
+}
+document.getElementById("video5").onmouseout = function(){
+    document.getElementById("video5").removeAttribute("controls");
+    document.getElementById("video5").pause();
+    document.getElementById("vc5").style.scale = 1;
+}
+
