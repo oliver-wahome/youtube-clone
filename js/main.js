@@ -27,7 +27,7 @@ var video2 = {
 var video3 = {
     id: 3,
     source: "https://player.vimeo.com/external/372182116.sd.mp4?s=2225f7b0666c1baeb2dd4e0580c43c1a0bab6920&profile_id=164&oauth2_token_id=57447761",
-    title: "A Day in the life of a Jumia Product a Manager",
+    title: "A Day in the life of a Jumia Product Manager",
     channel: "Jane Akinyi",
     channelSubs: "105K",
     channelIcon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpbx0UkmdcEGTqEr7uzUDMa78q_CuV5MTuug&usqp=CAU",
@@ -133,61 +133,101 @@ document.getElementById("video5").onclick = function(){
 */
 //video1
 document.getElementById("video1").onmouseover = function(){
-    document.getElementById("video1").setAttribute("controls", "controls");
     document.getElementById("video1").play();
     document.getElementById("vc1").style.scale = 1.25;
+    document.getElementById("vc1").style.zIndex = 6;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 document.getElementById("video1").onmouseout = function(){
-    document.getElementById("video1").removeAttribute("controls");
     document.getElementById("video1").pause();
     document.getElementById("vc1").style.scale = 1;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 
 //video2
 document.getElementById("video2").onmouseover = function(){
-    document.getElementById("video2").setAttribute("controls", "controls");
     document.getElementById("video2").play();
     document.getElementById("vc2").style.scale = 1.25;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 6;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 document.getElementById("video2").onmouseout = function(){
-    document.getElementById("video2").removeAttribute("controls");
     document.getElementById("video2").pause();
     document.getElementById("vc2").style.scale = 1;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 
 //video3
 document.getElementById("video3").onmouseover = function(){
-    document.getElementById("video3").setAttribute("controls", "controls");
     document.getElementById("video3").play();
     document.getElementById("vc3").style.scale = 1.25;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 6;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 document.getElementById("video3").onmouseout = function(){
-    document.getElementById("video3").removeAttribute("controls");
     document.getElementById("video3").pause();
     document.getElementById("vc3").style.scale = 1;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 
 //video4
 document.getElementById("video4").onmouseover = function(){
-    document.getElementById("video4").setAttribute("controls", "controls");
     document.getElementById("video4").play();
     document.getElementById("vc4").style.scale = 1.25;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 6;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 document.getElementById("video4").onmouseout = function(){
-    document.getElementById("video4").removeAttribute("controls");
     document.getElementById("video4").pause();
     document.getElementById("vc4").style.scale = 1;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 
 //video5
 document.getElementById("video5").onmouseover = function(){
-    document.getElementById("video5").setAttribute("controls", "controls");
     document.getElementById("video5").play();
     document.getElementById("vc5").style.scale = 1.25;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 6;
 }
 document.getElementById("video5").onmouseout = function(){
-    document.getElementById("video5").removeAttribute("controls");
     document.getElementById("video5").pause();
     document.getElementById("vc5").style.scale = 1;
+    document.getElementById("vc1").style.zIndex = 1;
+    document.getElementById("vc2").style.zIndex = 1;
+    document.getElementById("vc3").style.zIndex = 1;
+    document.getElementById("vc4").style.zIndex = 1;
+    document.getElementById("vc5").style.zIndex = 1;
 }
 

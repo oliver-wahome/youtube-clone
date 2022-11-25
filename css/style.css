@@ -119,6 +119,9 @@
 
 .video {
     width: 100%;
+    height: 100%;
+    /* to make sure videos fit fully in wrapper */
+    object-fit: cover;
     border-radius: 15px;
     cursor: pointer;
 }

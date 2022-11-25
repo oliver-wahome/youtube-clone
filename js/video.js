@@ -27,7 +27,7 @@ var video2 = {
 var video3 = {
     id: 3,
     source: "https://player.vimeo.com/external/372182116.sd.mp4?s=2225f7b0666c1baeb2dd4e0580c43c1a0bab6920&profile_id=164&oauth2_token_id=57447761",
-    title: "A Day in the life of a Jumia Product a Manager",
+    title: "A Day in the life of a Jumia Product Manager",
     channel: "Jane Akinyi",
     channelSubs: "105K",
     channelIcon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpbx0UkmdcEGTqEr7uzUDMa78q_CuV5MTuug&usqp=CAU",
