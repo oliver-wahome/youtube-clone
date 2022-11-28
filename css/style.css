@@ -102,9 +102,9 @@
 
 /* start homeRight */
 .videoContainer {
-    padding: 0 8px;
-    width: 25%;
-    height: 40vh;
+    margin: 0 8px;
+    width: 23%;
+    height: 43vh;
     float: left;
     background-color: white;
 }
@@ -112,7 +112,7 @@
 /* start videoContainer */
 .videoWrapper {
     width: 100%;
-    height: 60%;
+    height: 55%;
     display: flex;
     align-items: flex-end;
 }
@@ -120,8 +120,7 @@
 .video {
     width: 100%;
     height: 100%;
-    /* to make sure videos fit fully in wrapper */
-    object-fit: cover;
+    object-fit: cover; /* to make sure videos fit fully in wrapper */
     border-radius: 15px;
     cursor: pointer;
 }
@@ -140,7 +139,6 @@
     height: 36px;
     width: 36px;
     border-radius: 50%;
-    /* border: 1px solid #ccc; */
 }
 
 .videoAttributes {

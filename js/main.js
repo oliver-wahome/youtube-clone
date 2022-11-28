@@ -126,108 +126,33 @@ document.getElementById("video5").onclick = function(){
     window.location.href = "video.html?" + video5.id;
 }
 
+//video expand function
+//expanding the videoContainer when the video class is hovered over
+//NOTE: I could not achieve this using css so I resorted to doing it using js
+function videoMouseOver(num){
+    //playing the video on hover
+    document.getElementById("video"+num).play();
 
-/*
-    Making videos play when the mouse is over it
-    Making videos stop when the mouse is out
-*/
-//video1
-document.getElementById("video1").onmouseover = function(){
-    document.getElementById("video1").play();
-    document.getElementById("vc1").style.scale = 1.25;
-    document.getElementById("vc1").style.zIndex = 6;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
-}
-document.getElementById("video1").onmouseout = function(){
-    document.getElementById("video1").pause();
-    document.getElementById("vc1").style.scale = 1;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
+    //making the videoContainer expand when user hovers over video
+    document.getElementById("vc"+num).style.zIndex = 2;
+    document.getElementById("vc"+num).style.position = "relative";
+    document.getElementById("vc"+num).style.scale = 1.25;
+    document.getElementById("vc"+num).style.borderRadius = "15px";
+    document.getElementById("vc"+num).style.overflow = "hidden";
+    document.getElementById("vc"+num).style.boxShadow = "3px 3px 8px rgba(0, 0, 0, 0.5)";
+    document.getElementById("video"+num).style.borderRadius = 0;
 }
 
-//video2
-document.getElementById("video2").onmouseover = function(){
-    document.getElementById("video2").play();
-    document.getElementById("vc2").style.scale = 1.25;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 6;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
-}
-document.getElementById("video2").onmouseout = function(){
-    document.getElementById("video2").pause();
-    document.getElementById("vc2").style.scale = 1;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
-}
+function videoMouseOut(num){
+    //pausing the video on mouseout
+    document.getElementById("video"+num).pause();
 
-//video3
-document.getElementById("video3").onmouseover = function(){
-    document.getElementById("video3").play();
-    document.getElementById("vc3").style.scale = 1.25;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 6;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
+    //making the videoContainer shrink to its original state on mouseout
+    document.getElementById("vc"+num).style.zIndex = 1;
+    document.getElementById("vc"+num).style.position = "relative";
+    document.getElementById("vc"+num).style.scale = 1;
+    document.getElementById("vc"+num).style.borderRadius = 0;
+    document.getElementById("vc"+num).style.overflow = "hidden";
+    document.getElementById("vc"+num).style.boxShadow = "none";
+    document.getElementById("video"+num).style.borderRadius = "15px";
 }
-document.getElementById("video3").onmouseout = function(){
-    document.getElementById("video3").pause();
-    document.getElementById("vc3").style.scale = 1;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
-}
-
-//video4
-document.getElementById("video4").onmouseover = function(){
-    document.getElementById("video4").play();
-    document.getElementById("vc4").style.scale = 1.25;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 6;
-    document.getElementById("vc5").style.zIndex = 1;
-}
-document.getElementById("video4").onmouseout = function(){
-    document.getElementById("video4").pause();
-    document.getElementById("vc4").style.scale = 1;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
-}
-
-//video5
-document.getElementById("video5").onmouseover = function(){
-    document.getElementById("video5").play();
-    document.getElementById("vc5").style.scale = 1.25;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 6;
-}
-document.getElementById("video5").onmouseout = function(){
-    document.getElementById("video5").pause();
-    document.getElementById("vc5").style.scale = 1;
-    document.getElementById("vc1").style.zIndex = 1;
-    document.getElementById("vc2").style.zIndex = 1;
-    document.getElementById("vc3").style.zIndex = 1;
-    document.getElementById("vc4").style.zIndex = 1;
-    document.getElementById("vc5").style.zIndex = 1;
-}
-
